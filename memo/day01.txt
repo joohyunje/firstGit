@@ -1,0 +1,56 @@
+컴퓨터 프로그램
+	어떤 일을 처리하기 위한 소스코드로 구성된 것
+	특정 작업을 수행하는 명령어(소스코드)들의 모음
+
+JAVA - 프로그래밍 언어
+	컴퓨터와 개발자가 소통하기 위한 언어
+
+JVM (Java Virtual Machine)
+	JAVA로 만든 프로그램을 실행시켜준다.	
+
+JRE (Java Runtime Environment)
+	JVM을 포함한다.
+	JVM에서 실행할 때 필요한 라이브러리 파일 등을 가지고 있다.
+
+JDK (Java Development Kit)
+	JRE를 포함한다.
+	JRE 외에 개발에 필요한 도구들을 가지고 있다.(컴파일러 등)
+
+컴파일
+	사람의 언어를 컴퓨터의 언어로 번역해주는 작업
+
+컴파일러
+	번역기
+
+java 설치하기
+	구글 -> jdk17 -> 최상단 링크 -> 17.0.10 다운로드 (window installer)
+	-> 다운로드 파일 잘라내기 우리 경로 resource 로 붙여 넣기
+
+java 버전 확인하기
+	cmd -> java -version -> 아무 것도 안나오면 설치가 되어있지 않은 것!
+	
+IDE (Integrated Development Environment : 통합개발환경)
+	1. 개발의 편의성을 높이기 위해
+	2. 다양한 단축키를 사용할 수 있다.
+	3. 자동완성 기능을 제공한다.
+	4. 종류
+	- 이클립스 - 무료
+	- IntellJ - 유료
+
+이클립스 다운로드
+	구글 -> eclipse -> 최상단 링크 접속 -> 화면 중앙 왼쪽 Download Packages
+	-> 오른쪽 아래로 2023-03 -> Eclipse IDE for Enterprise Java and Web Developers
+
+관점 변경
+	Java EE -> Java
+
+인코딩 변경
+	window -> Preference -> encoding 검색 -> Workspace -> 왼쪽 하단 인코딩 방식 변경
+	-> Other -> UTF-8 선택!
+
+프로젝트의 구성
+	프로젝트 -> 패키지(소문자) -> 클래스(대문자 시작) -> 메소드 -> 소스코드 
+
+프로젝트 import 하기
+	압축 파일 다운 -> 왼쪽 위 file 탭 -> import -> General -> Existing Project into Workspace
+	-> Select archive File -> Browse -> 다운로든 한 압출 파일 선택 -> 끝! (프로젝트 이름이 같다면 import 불가)

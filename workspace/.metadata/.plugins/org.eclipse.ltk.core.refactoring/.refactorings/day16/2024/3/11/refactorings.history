@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;streamTest&apos; to &apos;day18/src&apos;&#x0D;&#x0A;- Original project: &apos;day16&apos;&#x0D;&#x0A;- Destination element: &apos;day18/src&apos;&#x0D;&#x0A;- Original element: &apos;day16/src/streamTest&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=day18/src" element1="/src&lt;streamTest" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1710240530280" version="1.0"/>
+</session>

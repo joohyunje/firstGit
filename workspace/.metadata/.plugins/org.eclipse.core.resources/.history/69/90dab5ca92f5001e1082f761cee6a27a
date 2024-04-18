@@ -1,0 +1,67 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import util.DBConnection;
+
+public class ClinicDAO {
+	
+	private Connection con;
+	private PreparedStatement pstm;
+	private ResultSet rs;
+	
+	public void insert(int animalNumber, String disease) {
+		String sql = "INSERT INTO TBL_CLINIC\r\n"
+				+ "(CLINIC_NUMBER, ANIMAL_NUMBER, CLINIC_DISEASE, CLINIC_TIME)\r\n"
+				+ "VALUES(SEQ_PRO.NEXTVAL, ?, ?, SYSDATE)";
+		
+		try {
+			con = DBConnection.getConnection();
+			pstm = con.prepareStatement(sql);
+			pstm.setInt(1, animalNumber);
+			pstm.setString(2, disease);
+			pstm.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("clinicDAO.insert() 도중 에러");
+		} finally {
+			try {
+				DBConnection.close(con, pstm);
+			} catch (SQLException e) {
+				e.printStackTrace();
+				System.out.println("insert() 닫는 도중 에러");
+			}
+		}
+	}
+	
+	// 동물을 삭제하기 전에, 동물의 pk를 참조하는 진료기록의 fk를 전부 null로 수정한다.
+	public void updateFk(int deleteAnimalNumber) {
+		
+		String sql = "UPDATE TBL_CLINIC \r\n"
+				+ "SET ANIMAL_NUMBER = NULL\r\n"
+				+ "WHERE ANIMAL_NUMBER = ?";
+		
+		try {
+			con = DBConnection.getConnection();
+			pstm = con.prepareStatement(sql);
+			pstm.setInt(1, deleteAnimalNumber);
+			pstm.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("updateFk() 도중 에러");
+		} finally {
+			try {
+				DBConnection.close(con, pstm);
+			} catch (SQLException e) {
+				e.printStackTrace();
+				System.out.println("updateFk() 닫는 도중 에러");
+			}
+		}
+	}
+	
+}

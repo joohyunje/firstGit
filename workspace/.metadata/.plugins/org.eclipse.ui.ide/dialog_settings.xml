@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\web_1900_jhj\1_java\workspace\hospital (2).zip"/>
+			<item value="D:\web_1900_jhj\1_java\workspace\hospital.zip"/>
+			<item value="D:\web_1900_jhj\1_java\workspace\jdbc3 (2).zip"/>
+			<item value="D:\web_1900_jhj\1_java\workspace\jdbc1.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\joinProject.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day17.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day16.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day13.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\game.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day11.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day10.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day09.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day08.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day07.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day06.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day05.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day04.zip"/>
+			<item value="D:\web_1900_jhj\java\workspace\day03.zip"/>
+		</list>
+	</section>
+</section>
